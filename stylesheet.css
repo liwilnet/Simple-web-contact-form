@@ -1,0 +1,61 @@
+body {
+  background-color: #874356;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+article {
+  background-color: #f68989;
+  margin: 5vh 35vh;
+  height: auto;
+  border-radius: 12px;
+  padding: 3vh;
+}
+.contact_form {
+  /* background-color: #f6e7d8; */
+  margin: 4vh;
+  height: 65vh;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30px;
+  gap: 10px;
+  grid-template-areas:
+    "username email"
+    "query query"
+    "comment comment"
+    "submit submit"
+    "terms .";
+}
+strong {
+  color: #051367;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+}
+
+#userName {
+  grid-area: username;
+}
+#email {
+  grid-area: email;
+}
+#query {
+  grid-area: query;
+}
+#commentar {
+  grid-area: comment;
+}
+#submit {
+  grid-area: submit;
+  background-color: #65c18c;
+  border-color: #65c18c;
+  border-radius: 5px;
+}
+#terms {
+  grid-area: terms;
+}
